@@ -1,0 +1,76 @@
+/* ================================
+   VARIABLES GLOBALES
+   (colores y fuentes que usaremos 
+   en toda la página)
+================================ */
+:root {
+    --color-fondo: #0f172a;
+    --color-texto: #f8fafc;
+    --color-texto-suave: #94a3b8;
+    --color-acento: #38bdf8;
+    --color-boton: #16a34a;
+    --fuente-principal: 'Inter', sans-serif;
+}
+
+/* ================================
+   RESET BÁSICO
+   (elimina estilos por defecto 
+   del navegador)
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================
+   ESTILOS GENERALES
+================================ */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ================================
+   NAVEGACIÓN
+================================ */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--color-fondo);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav h1 {
+    color: var(--color-acento);
+    font-size: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul a {
+    color: var(--color-texto-suave);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+nav ul a:hover {
+    color: var(--color-acento);
+}
+
+.btn-menu {
+    display: none;
+}
